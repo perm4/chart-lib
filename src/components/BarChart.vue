@@ -3,14 +3,10 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
-
+/* eslint-disable */
 export default {
   mounted() {
-    // const ctx = document.getElementById('barChart');
-    // const ctx = this.$refs.barChart;
-    // eslint-disable-next-line
-    const barChart = new Chart(this.$refs.barChart, {
+    const barChart = new this.$_Chart(this.$refs.barChart, {
         type: 'bar',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],

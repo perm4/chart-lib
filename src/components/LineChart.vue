@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
-
 export default {
   mounted() {
     const labels = [
@@ -36,7 +34,7 @@ export default {
     var ctx = this.$refs.lineChart.getContext('2d');
 
     // eslint-disable-next-line
-    const lineChart = new Chart(
+    const lineChart = new this.$_Chart(
         // document.getElementById('lineChart'),
         ctx,
         config
